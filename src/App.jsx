@@ -3,6 +3,7 @@ import NameInput from './components/NameInput.jsx';
 import TaskList from './components/TaskList.jsx';
 import ShowHide from './components/ShowHide.jsx';
 import FilterTasks from './components/FilterTasks.jsx';
+import ProfileForm from './components/ProfileForm.jsx';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <TaskList />
       <ShowHide />
       <FilterTasks />
+      <ProfileForm />
     </>
   );
 }
