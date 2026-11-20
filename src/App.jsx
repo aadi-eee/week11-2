@@ -14,6 +14,9 @@ export default function App() {
 
       <div className="site">
         <main id="main" tabIndex={-1}>
+          <a className="back" href="https://aadi-eee.github.io/webprogramming/#work">
+            &larr; Back to all assignments
+          </a>
           <h1>My <span className="script">Week 11_2</span> Exercises</h1>
           <p className="lead">React state and events: practice making the interface respond.</p>
 
