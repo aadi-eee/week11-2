@@ -191,3 +191,13 @@ h2 {
   line-height: 1.6;
   text-align: left;
 }
+
+.back,
+.back:visited {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--maroon);
+  text-decoration: none;
+}
+.back:hover { text-decoration: underline; }
