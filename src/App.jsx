@@ -1,5 +1,6 @@
 import Counter from './components/Counter.jsx';
 import NameInput from './components/NameInput.jsx';
+import TaskList from './components/TaskList.jsx';
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <h1>Week 11_2</h1>
       <Counter />
       <NameInput />
+      <TaskList />
     </>
   );
 }
