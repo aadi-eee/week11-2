@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const starter = [
-  { id: 1, text: 'Review component props' },
-  { id: 2, text: 'Practice state updates' },
-  { id: 3, text: 'Build something small' },
+  { id: 1, text: 'Finish the Git practice' },
+  { id: 2, text: 'Revise CSS flexbox' },
+  { id: 3, text: 'Submit the week 11 page' },
 ];
 
 export default function TaskList() {

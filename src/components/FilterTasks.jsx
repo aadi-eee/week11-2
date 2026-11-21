@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const starter = [
-  { id: 1, text: 'Read the React lesson', done: true },
-  { id: 2, text: 'Try the counter', done: false },
-  { id: 3, text: 'Update the task list', done: false },
+  { id: 1, text: 'Push the project to GitHub', done: true },
+  { id: 2, text: 'Rebuild the dist folder', done: false },
+  { id: 3, text: 'Check the live link', done: false },
 ];
 
 const filters = ['All', 'Active', 'Done'];

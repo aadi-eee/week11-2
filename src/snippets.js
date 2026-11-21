@@ -13,17 +13,14 @@ export const snippets = {
 />
 <p>Hello, {name || 'there'}!</p>`,
 
-  E3: `const [tasks, setTasks] = useState([]);
-
-function addTask(text) {
-  setTasks((current) => [...current, { id: Date.now(), text }]);
-}
+  E3: `const [tasks, setTasks] = useState([
+  { id: 1, text: 'Finish the Git practice' },
+  { id: 2, text: 'Revise CSS flexbox' },
+]);
 
 function removeTask(id) {
   setTasks((current) => current.filter((task) => task.id !== id));
-}
-
-{tasks.map((task) => <li key={task.id}>{task.text}</li>)}`,
+}`,
 
   E4: `const [open, setOpen] = useState(true);
 
@@ -32,15 +29,18 @@ function removeTask(id) {
 </button>
 {open && <p>State lets React update just the part that changed.</p>}`,
 
-  E5: `setTasks((current) =>
-  current.map((task) =>
-    task.id === id ? { ...task, done: !task.done } : task
-  )
-);
+  E5: `const [tasks, setTasks] = useState([
+  { id: 1, text: 'Push the project to GitHub', done: true },
+  { id: 2, text: 'Rebuild the dist folder', done: false },
+]);
 
-const visible = tasks.filter((task) =>
-  filter === 'Active' ? !task.done : filter === 'Done' ? task.done : true
-);`,
+function toggle(id) {
+  setTasks((current) =>
+    current.map((task) =>
+      task.id === id ? { ...task, done: !task.done } : task
+    )
+  );
+}`,
 
   E6: `const [form, setForm] = useState({ name: '', email: '' });
 
