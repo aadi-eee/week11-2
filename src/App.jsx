@@ -6,6 +6,7 @@ import ShowHide from './components/ShowHide.jsx';
 import FilterTasks from './components/FilterTasks.jsx';
 import ProfileForm from './components/ProfileForm.jsx';
 import QuickNote from './components/QuickNote.jsx';
+import StudentCard from './components/StudentCard.jsx';
 
 export default function App() {
   return (
@@ -20,6 +21,14 @@ export default function App() {
           <h1>My <span className="script">Week 11_2</span> Exercises</h1>
           <p className="lead">React state and events: practice making the interface respond.</p>
 
+          <StudentCard
+            name="Aaditi"
+            id="202537195"
+            major="Computer Engineering"
+          />
+          <p className="lead">
+            StudentCard receives the student details from App as props and uses them to fill in the card.
+          </p>
           <h2>React Tasks</h2>
 
           <div className="cards">
